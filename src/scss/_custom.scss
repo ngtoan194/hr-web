@@ -1,0 +1,96 @@
+// Here you can add other styles
+.btn:focus, button:focus, .btn.focus, button.focus {
+    box-shadow: none;
+}
+
+
+.sidebar-minimized {
+    .sidebar {
+        .nav {
+            .nav-item:hover > .nav-link, .nav-icon {
+                background-color: #fff !important;
+                color: #3f51b5 !important;
+            }
+            .nav-dropdown:hover {
+                background-color: #3f51b5 !important;
+                .nav-dropdown-items {
+                    background-color: #fff !important;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    background: #fff;
+    color: #73818f;
+    border-right: 1px solid #f1f1f1;
+    .nav-title, .nav-link {
+        color: #73818f !important
+    }
+    .nav-link {
+        &:hover {
+            background: #fff !important;
+            color: #3f51b5 !important;
+            .nav-icon {
+                color: #3f51b5 !important;
+            }
+        }
+        .badge {
+            background-color: #fff !important;
+            color:#e91e63 !important;
+        }
+    }
+    .nav-link:hover.nav-dropdown-toggle::before {
+        background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='%2373818f' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E");
+    }
+    .nav-link.active {
+        background: #fff;
+        color: #3f51b5 !important;
+        .nav-icon {
+            color: #3f51b5 !important;
+        }
+    }
+    .nav-dropdown.open {
+        background: #fff !important;
+        .nav-dropdown-items {
+            padding-left: 15px;
+        }
+    }
+    .sidebar-minimizer {
+        background-color: #3f51b5 !important;
+        color: #fff !important;
+        border-radius: 0px;
+        &:hover {
+            background-color: #fff;
+            color: #73818f;
+        }
+    }
+    .sidebar-minimizer::before {
+        background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3Cpath fill='%23fff' d='M9.148 2.352l-4.148 4.148 4.148 4.148q0.148 0.148 0.148 0.352t-0.148 0.352l-1.297 1.297q-0.148 0.148-0.352 0.148t-0.352-0.148l-5.797-5.797q-0.148-0.148-0.148-0.352t0.148-0.352l5.797-5.797q0.148-0.148 0.352-0.148t0.352 0.148l1.297 1.297q0.148 0.148 0.148 0.352t-0.148 0.352z'/%3E%3C/svg%3E")
+    }
+}
+.main {
+    .breadcrumb {
+        border-bottom:none;
+        background: #fafafa;
+        .breadcrumb-item {
+            font-size: 18px;
+            a {
+                color:#3f51b5;
+            }
+        }
+    }
+}
+.app-header {
+    height: 60px;
+    border-bottom:none
+}
+.header-fixed .app-body {
+    margin-top: 62px !important;
+}
+#loginPage {
+    background-image: url('/assets/bg_login.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
